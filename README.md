@@ -27,7 +27,11 @@ Technologies used in development:
 
 ### at the start
 
-![at-begining]()
+![at-begining](https://raw.githubusercontent.com/Pfeszler/Currency-calculator-react/master/src/image/Readme-image/start.jpg)
+
+### table
+
+![table](https://github.com/Pfeszler/Currency-calculator-react/blob/master/src/image/Readme-image/table.jpg?raw=true)
 
 ### with amount
 
