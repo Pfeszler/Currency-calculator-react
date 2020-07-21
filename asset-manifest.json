@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Currency-calculator-react/static/css/main.c161f0c0.chunk.css",
+    "main.js": "/Currency-calculator-react/static/js/main.7d21f024.chunk.js",
+    "main.js.map": "/Currency-calculator-react/static/js/main.7d21f024.chunk.js.map",
+    "runtime-main.js": "/Currency-calculator-react/static/js/runtime-main.4515b25a.js",
+    "runtime-main.js.map": "/Currency-calculator-react/static/js/runtime-main.4515b25a.js.map",
+    "static/js/2.fd8f644b.chunk.js": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js",
+    "static/js/2.fd8f644b.chunk.js.map": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js.map",
+    "index.html": "/Currency-calculator-react/index.html",
+    "precache-manifest.682438ad3a2fe30c96565d6a9de7c5bd.js": "/Currency-calculator-react/precache-manifest.682438ad3a2fe30c96565d6a9de7c5bd.js",
+    "service-worker.js": "/Currency-calculator-react/service-worker.js",
+    "static/css/main.c161f0c0.chunk.css.map": "/Currency-calculator-react/static/css/main.c161f0c0.chunk.css.map",
+    "static/js/2.fd8f644b.chunk.js.LICENSE.txt": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/Currency-calculator-react/static/media/money_banknotes_currency_forex_us_dollars_euro_baht_peso-551241.dcdf8117.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4515b25a.js",
+    "static/js/2.fd8f644b.chunk.js",
+    "static/css/main.c161f0c0.chunk.css",
+    "static/js/main.7d21f024.chunk.js"
+  ]
+}
