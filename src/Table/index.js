@@ -8,13 +8,15 @@ const Table = ({ currencies }) => (
                 Tabela kursów walut
                 </caption>
             <thead>
-                <th className="table__header table__cell">Waluta</th>
-                <th className="table__header table__cell">Kupno</th>
-                <th className="table__header table__cell">Sprzedaż</th>
+                <tr>
+                    <th className="table__header table__cell">Waluta</th>
+                    <th className="table__header table__cell">Kupno</th>
+                    <th className="table__header table__cell">Sprzedaż</th>
+                </tr>
             </thead>
             <tbody className="">
                 {currencies.map(currency =>
-                    <tr>
+                    <tr key={currency.name}>
                         <th className="table__header table__cell">{currency.name}</th>
                         <td className="table__cell">{currency.buyprice}</td>
                         <td className="table__cell">{currency.sellprice}</td>

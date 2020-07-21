@@ -78,7 +78,11 @@ const Form = ({ currencies }) => {
                                         setAnswer("");
                                     }}>
                                     {currencies.map(currency =>
-                                        <option value={currency.id}>{currency.name}</option>
+                                        <option
+                                            value={currency.id}
+                                            key={currency.id}>
+                                            {currency.name}
+                                        </option>
                                     )}
                                 </select>
                             </label>
