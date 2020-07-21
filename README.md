@@ -27,7 +27,7 @@ Technologies used in development:
 
 ### at the start
 
-![at-begining](https://raw.githubusercontent.com/Pfeszler/Currency-calculator-react/master/src/image/Readme-image/start.jpg)
+![at-begining](https://github.com/Pfeszler/Currency-calculator-react/blob/master/src/image/Readme-image/start.jpg?raw=true)
 
 ### table
 
@@ -35,11 +35,11 @@ Technologies used in development:
 
 ### with amount
 
-![with-amount]()
+![with-amount](https://github.com/Pfeszler/Currency-calculator-react/blob/master/src/image/Readme-image/input.png?raw=true)
 
 ### with answer
 
-![with-answer]()
+![with-answer](https://github.com/Pfeszler/Currency-calculator-react/blob/master/src/image/Readme-image/answer.jpg?raw=true)
 
 ## last update: 
 - fully convertet to React-JS using create-react app
