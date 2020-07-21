@@ -1,3 +1,54 @@
+# Currency Calculator
+
+
+## Want to see demo page? click [here]()
+
+Here is Currency Calculator, fully created in React JS, for me that was first project created in React all by myself. I maked it during the course "Front-End Developer" in You Code Academy. In this app you have option to calculate price of selling or buying few currencies for Złoty. First, you need to mark, if you want buy foreign currency or sell it, then you should use select to check which currency you want operate on. Last thing left is to put the amount in proper input. The final value will apear automaticly, you can also hit a button to show a paragraph, which summarise the calculation. Under input you have a handy table, which shows prices, that calculator uses. Enjoy!
+
+## Added New fetures: 
+
+Technologies used in development:
+- HTML
+- CSS
+- JavaScript
+- BEM metodolgy
+- React JS
+- create-react-app
+
+## How to use it?
+1. Use radio buttons to chose if you buying or selling
+2. use select to chose currency on which you operating
+3. put an amount on input
+4. click on button to see summary
+5. The summary will automaticly disapear, if you want to change something
+6. Enjoy using it :)
+
+## How it looks?
+
+### at the start
+
+![at-begining]()
+
+### with amount
+
+![with-amount]()
+
+### with answer
+
+![with-answer]()
+
+## last update: 
+- fully convertet to React-JS using create-react app
+
+## About me
+
+
+Paweł Feszler, sales manager and wannabe front-end developer ;)\
+In my project i always try to follow the best practices, use semantic HTML and write as clean code as i can, but i'm still lerning, if you find any buggs or ways to improve my project let mi know. \
+[Contact Me](pfeszler@gmail.com)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -11,11 +62,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
