@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from "./Header"
 import Container from "./Container"
 import Form from "./Form"
@@ -17,12 +17,11 @@ const currencies = [
 
 
 function App() {
- const [buy, setBuy] = useState(true)
   return (
     <React.Fragment>
       <Header />
       <Container>
-       <Form currencies={currencies} buy={buy} setBuy={setBuy} />
+       <Form currencies={currencies} />
         <Table currencies= {currencies} />
       </Container>
      <Footer />
