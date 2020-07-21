@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  --colorPrime: hsl(135, 57%, 63%);
+  color: #333;
+  background-image: url(/src/money_banknotes_currency_forex_us_dollars_euro_baht_peso-551241.jpg);
+  background-size: cover;
+  position: relative;
+}
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(240, 255, 255, 0.548);
+}
