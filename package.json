@@ -2,7 +2,9 @@
   "name": "currency-calculator-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pfeszler.github.io/Currency-calculator-react/",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -11,7 +13,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
+  
   },
   "eslintConfig": {
     "extends": "react-app"
