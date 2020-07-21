@@ -15,9 +15,9 @@ const Table = ({ currencies }) => (
             <tbody className="">
                 {currencies.map(currency =>
                     <tr>
-                        <th class="table__header table__cell">{currency.name}</th>
-                        <td class="table__cell">{currency.buyprice}</td>
-                        <td class="table__cell">{currency.sellprice}</td>
+                        <th className="table__header table__cell">{currency.name}</th>
+                        <td className="table__cell">{currency.buyprice}</td>
+                        <td className="table__cell">{currency.sellprice}</td>
                     </tr>
 
                 )}
