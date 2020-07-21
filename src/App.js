@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from "./Header"
+import Container from "./Container"
+import Table from "./Table"
 
 const currencies = [
   { id: 1, name: "dolar amerykański", symbol: "USD", buyprice: 3.9384, sellprice: 4.0180 },
@@ -16,7 +18,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <main className="container">
+      <Container>
         <form className="form js-form">
           <fieldset className="form__fieldset">
             <legend className="form__legend">Co chcesz zrobić?</legend>
@@ -69,22 +71,8 @@ function App() {
         <p className="form__answer">
 
         </p>
-        <section className="table__container">
-          <table className="table">
-            <caption className="table__caption">
-              Tabela kursów walut
-                </caption>
-            <thead>
-              <th className="table__header table__cell">Waluta</th>
-              <th className="table__header table__cell">Kupno</th>
-              <th className="table__header table__cell">Sprzedaż</th>
-            </thead>
-            <tbody className="">
-
-            </tbody>
-          </table>
-        </section>
-      </main>
+        <Table currencies= {currencies} />
+      </Container>
       <footer className="footer">
         <p className="footer__text">
           Nie jesteśmy prawdziwym kantorem. ale i tak możesz przesłać nam pieniądze. Gwarantujemy. że ich nie
