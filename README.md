@@ -1,7 +1,7 @@
 # Currency Calculator
 
 
-## Want to see demo page? click [here](https://pfeszler.github.io/currency-converter/)
+## Want to see demo page? click [here](https://pfeszler.github.io/Currency-calculator-react/)
 
 Here is Currency Calculator, fully created in React JS, for me that was first project created in React all by myself. I maked it during the course "Front-End Developer" in You Code Academy. In this app you have option to calculate price of selling or buying few currencies for Złoty. First, you need to mark, if you want buy foreign currency or sell it, then you should use select to check which currency you want operate on. Last thing left is to put the amount in proper input. The final value will apear automaticly, you can also hit a button to show a paragraph, which summarise the calculation. Under input you have a handy table, which shows prices, that calculator uses. Enjoy!
 

@@ -45,6 +45,7 @@
 .form__paragraph {
     display: block;
     height: 2em;
+    font-weight: bold;
 }
 
 .form__button {

@@ -23,7 +23,7 @@ const Form = ({ currencies }) => {
         setAnswer(`Na rachunek powiązany z Twoim kontem zostało przelane
          ${calculateFinalValue()} ${buy ? currencies[currencySelected].symbol : "PLN"} `)
 
-    
+
     return (
         <React.Fragment>
             <form className="form"
@@ -110,11 +110,12 @@ const Form = ({ currencies }) => {
                 </fieldset>
                 <div className="form__text">
                     <p>
-                        Otrzymasz <strong>{calculateFinalValue()} ({buy ? currencies[currencySelected].symbol : "PLN"})
-
-                                    </strong>
+                        Otrzymasz
                     </p>
-                    <p className="form__paragraph"> </p>
+                    <p className="form__paragraph">
+                        {calculateFinalValue()} ({buy ? currencies[currencySelected].symbol : "PLN"})
+
+                    </p>
                 </div>
                 <button className="form__button">Wymień</button>
             </form>
