@@ -20,9 +20,10 @@ const Form = ({ currencies }) => {
     }
 
     const onFormSubmit = () =>
-        setAnswer(`na rachunek powiązany z Twoim kontem zostało przelane
+        setAnswer(`Na rachunek powiązany z Twoim kontem zostało przelane
          ${calculateFinalValue()} ${buy ? currencies[currencySelected].symbol : "PLN"} `)
 
+    
     return (
         <React.Fragment>
             <form className="form"
@@ -80,7 +81,7 @@ const Form = ({ currencies }) => {
                                     {currencies.map(currency =>
                                         <option
                                             value={currency.id}
-                                            key={currency.id}>
+                                            key={currency.symbol}>
                                             {currency.name}
                                         </option>
                                     )}
