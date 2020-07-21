@@ -1,9 +1,10 @@
 import React from 'react';
-import Header from "./Header"
 import Container from "./Container"
-import Form from "./Form"
-import Table from "./Table"
-import Footer from "./Footer"
+import Header from "./Header";
+import Main from "./Main";
+import Form from "./Form";
+import Table from "./Table";
+import Footer from "./Footer";
 
 const currencies = [
   { id: 0, name: "dolar amerykański", symbol: "USD", buyprice: 3.9384, sellprice: 4.0180 },
@@ -12,20 +13,20 @@ const currencies = [
   { id: 3, name: "frank szwajcarski", symbol: "CHF", buyprice: 4.1437, sellprice: 4.2275 },
   { id: 4, name: "korona norweska", symbol: "NOK", buyprice: 0.4113, sellprice: 0.4197 },
   { id: 5, name: "korona czeska", symbol: "CZK", buyprice: 0.1660, sellprice: 0.1694 },
-]
+];
 
 
 
 function App() {
   return (
-    <React.Fragment>
+    <Container>
       <Header />
-      <Container>
-       <Form currencies={currencies} />
-        <Table currencies= {currencies} />
-      </Container>
-     <Footer />
-    </React.Fragment>
+      <Main>
+        <Form currencies={currencies} />
+        <Table currencies={currencies} />
+      </Main>
+      <Footer />
+    </Container>
   );
 }
 

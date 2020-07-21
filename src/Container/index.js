@@ -1,9 +1,11 @@
 import React from "react"
 import "./style.css"
 
-const Container = ({children}) =>
-<main className="container">
-    {children}
-</main>
+
+const Container = ({children}) => 
+    <div className="container">
+        {children}
+    </div>
+
 
 export default Container
