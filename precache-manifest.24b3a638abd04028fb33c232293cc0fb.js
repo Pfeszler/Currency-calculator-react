@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4402a83bf8c19923d15c43efb0fe7f75",
+    "revision": "1480945ee0cf587cbaa080401210a610",
     "url": "/Currency-calculator-react/index.html"
   },
   {
-    "revision": "70f4e24e4e54843b5a16",
-    "url": "/Currency-calculator-react/static/css/main.4bb18d76.chunk.css"
+    "revision": "e8c03a94e33885044cf6",
+    "url": "/Currency-calculator-react/static/css/main.84ad3146.chunk.css"
   },
   {
     "revision": "a1a80dfed30d99b64fda",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70f4e24e4e54843b5a16",
-    "url": "/Currency-calculator-react/static/js/main.f855128a.chunk.js"
+    "revision": "e8c03a94e33885044cf6",
+    "url": "/Currency-calculator-react/static/js/main.72e4f448.chunk.js"
   },
   {
     "revision": "ee36364f033663193d39",

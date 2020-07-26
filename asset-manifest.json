@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Currency-calculator-react/static/css/main.4bb18d76.chunk.css",
-    "main.js": "/Currency-calculator-react/static/js/main.f855128a.chunk.js",
-    "main.js.map": "/Currency-calculator-react/static/js/main.f855128a.chunk.js.map",
+    "main.css": "/Currency-calculator-react/static/css/main.84ad3146.chunk.css",
+    "main.js": "/Currency-calculator-react/static/js/main.72e4f448.chunk.js",
+    "main.js.map": "/Currency-calculator-react/static/js/main.72e4f448.chunk.js.map",
     "runtime-main.js": "/Currency-calculator-react/static/js/runtime-main.4515b25a.js",
     "runtime-main.js.map": "/Currency-calculator-react/static/js/runtime-main.4515b25a.js.map",
     "static/js/2.fd8f644b.chunk.js": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js",
     "static/js/2.fd8f644b.chunk.js.map": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js.map",
     "index.html": "/Currency-calculator-react/index.html",
-    "precache-manifest.df7e26844e8ba02bfea9c8daf032d22b.js": "/Currency-calculator-react/precache-manifest.df7e26844e8ba02bfea9c8daf032d22b.js",
+    "precache-manifest.24b3a638abd04028fb33c232293cc0fb.js": "/Currency-calculator-react/precache-manifest.24b3a638abd04028fb33c232293cc0fb.js",
     "service-worker.js": "/Currency-calculator-react/service-worker.js",
-    "static/css/main.4bb18d76.chunk.css.map": "/Currency-calculator-react/static/css/main.4bb18d76.chunk.css.map",
+    "static/css/main.84ad3146.chunk.css.map": "/Currency-calculator-react/static/css/main.84ad3146.chunk.css.map",
     "static/js/2.fd8f644b.chunk.js.LICENSE.txt": "/Currency-calculator-react/static/js/2.fd8f644b.chunk.js.LICENSE.txt",
     "static/media/style.css": "/Currency-calculator-react/static/media/money_banknotes_currency_forex_us_dollars_euro_baht_peso-551241.dcdf8117.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4515b25a.js",
     "static/js/2.fd8f644b.chunk.js",
-    "static/css/main.4bb18d76.chunk.css",
-    "static/js/main.f855128a.chunk.js"
+    "static/css/main.84ad3146.chunk.css",
+    "static/js/main.72e4f448.chunk.js"
   ]
 }
