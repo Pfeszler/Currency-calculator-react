@@ -2,13 +2,15 @@ import React from "react"
 import "./style.css"
 
 
-const Answer = ({answerValue}) => 
-!!answerValue && 
-        <p className="answer">
-            Na rachunek powiązany z Twoim kontem zostało przelane
-            {answerValue}
+const Answer = ({ answerValue, resultSymbol }) =>
+    !!answerValue &&
+    <p className="answer">
+        Na rachunek powiązany z Twoim kontem zostało przelane
+         <p>
+            {answerValue}&nbsp;{resultSymbol}
         </p>
-    
+    </p>
+
 
 
 
