@@ -4,7 +4,9 @@ import "./style.css"
 
 const Answer = ({ answerValue, resultSymbol }) =>
     !!answerValue &&
-    <p className="answer">
+    <p
+        className="answer"
+    >
         Na rachunek powiązany z Twoim kontem zostało przelane
          <p>
             {answerValue}&nbsp;{resultSymbol}
