@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Container from "./Container"
 import Header from "./Header";
 import Main from "./Main";
@@ -10,29 +10,12 @@ import { currencies } from './currencies.js'
 
 
 function App() {
-
-  const [date, setDate] = useState(new Date())
-
-  useEffect(() => {
-    const intervalId =
-      setInterval(
-        () => { setDate(new Date()) },
-        1000)
-      ;
-    return () => {
-      clearInterval(intervalId)
-    }
-  },
-    []);
-
     
   return (
     <Container>
       <Header />
       <Main>
-        <Clock
-          date={date}
-        />
+        <Clock />
         <Form
           currencies={currencies}
         />
