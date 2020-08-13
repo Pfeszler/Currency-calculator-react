@@ -56,7 +56,9 @@ const Form = ({ currencies }) => {
                                         setAnswerValue("");
                                     }}
                                 />
-                                <Discription>
+                                <Discription
+                                    inline
+                                >
                                     Kupuję
                                 </Discription>
                             </label>
@@ -73,7 +75,9 @@ const Form = ({ currencies }) => {
                                     }}
                                     required
                                 />
-                                <Discription>
+                                <Discription
+                                    inline
+                                >
                                     Sprzedaję
                                 </Discription>
                             </label>
@@ -128,7 +132,7 @@ const Form = ({ currencies }) => {
                     </InputContainer>
                 </Flexbox >
             </StyledFieldset>
-           <Text>
+            <Text>
                 <p>
                     Otrzymasz
                 </p>

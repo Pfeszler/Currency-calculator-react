@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const StyledFieldset = styled.div`
     padding: 20px;
@@ -24,8 +24,11 @@ export const InputContainer = styled.div`
 `
 
 export const Discription = styled.span`
-    display: inline-block;
+    display: block;
     margin: 10px 10px;
+    ${({ inline }) => inline && css`
+    display: inline-block;
+    `}
 `
 
 export const StyledInput = styled.input`
