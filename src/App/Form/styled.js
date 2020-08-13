@@ -26,6 +26,7 @@ export const InputContainer = styled.div`
 export const Discription = styled.span`
     display: block;
     margin: 10px 10px;
+    
     ${({ inline }) => inline && css`
     display: inline-block;
     `}

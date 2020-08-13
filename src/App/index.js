@@ -10,7 +10,7 @@ import { currencies } from './currencies.js'
 
 
 function App() {
-    
+
   return (
     <Container>
       <Header />

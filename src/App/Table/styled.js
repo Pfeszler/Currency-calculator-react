@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-export const StyledTable= styled.section`
+export const StyledTable = styled.section`
     max-width: 600px;
     overflow-x: auto;
     padding: 20px;
@@ -23,7 +23,7 @@ export const Cell = styled.td`
     padding: 20px;
     border: 3px solid #333;
     text-align: center;
-    ${({header}) => header && css`
+    ${({ header }) => header && css`
         background: var(--colorPrime);
         text-transform: uppercase;
         font-weight: 400;
