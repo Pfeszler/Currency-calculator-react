@@ -1,22 +1,17 @@
 import React from "react"
-import "./style.css"
+import {StyledHeader, Text, Logo} from "./styled"
 
 
 const Header = () => (
-  <header
-    className="header"
-  >
-    <h1
-      className="header__text"
-    >
+  <StyledHeader>
+    <Text>
       Kantor wymiany walut
-    </h1>
-    <img
-      className="header__logo"
+    </Text>
+    <Logo
       alt="logo"
       src="https://cdn.onlinewebfonts.com/svg/img_353628.png"
     />
-  </header>
+  </StyledHeader>
 )
 
 export default Header

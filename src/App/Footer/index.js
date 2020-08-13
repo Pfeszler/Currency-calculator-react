@@ -1,18 +1,14 @@
 import React from "react"
-import "./style.css"
+import {StyledFooter, Text} from "./styled"
 
 
 const Footer = () => (
-  <footer
-    className="footer"
-  >
-    <p
-      className="footer__text"
-    >
+  <StyledFooter >
+    <Text>
       Nie jesteśmy prawdziwym kantorem. ale i tak możesz przesłać nam pieniądze. Gwarantujemy. że ich nie
       odzyskasz!
-    </p>
-  </footer>
+    </Text>
+  </StyledFooter>
 )
 
 export default Footer

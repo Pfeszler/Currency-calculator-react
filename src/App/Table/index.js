@@ -1,62 +1,59 @@
 import React from "react"
-import "./style.css"
+import { StyledTable, Container, Caption, Cell } from "./styled"
 
 const Table = ({ currencies }) => (
-    <section
-        className="table"
-    >
-        <table
-            className="table__container"
-        >
-            <caption
-                className="table__caption"
-            >
+
+    <StyledTable>
+        <Container>
+            <Caption>
                 Tabela kursów walut
-            </caption>
+            </Caption>
             <thead>
                 <tr>
-                    <th
-                        className="table__header table__cell"
-                    >Waluta
-                    </th>
-                    <th
-                        className="table__header table__cell"
+                    <Cell
+                        as="th"
+                        header
+                    >
+                        Waluta
+                    </Cell>
+                    <Cell
+                        as="th"
+                        header
                     >
                         Kupno
-                    </th>
-                    <th
-                        className="table__header table__cell"
+                    </Cell>
+                    <Cell
+                        as="th"
+                        header
                     >
                         Sprzedaż
-                    </th>
+                    </Cell>
                 </tr>
             </thead>
-            <tbody className="">
+            <tbody>
                 {currencies.map(currency =>
                     <tr
                         key={currency.name}
                     >
-                        <th
-                            className="table__header table__cell"
+                        <Cell
+                            as="th"
+                            header
                         >
                             {currency.name}
-                        </th>
-                        <td
-                            className="table__cell"
-                        >
+                        </Cell>
+                        <Cell>
                             {currency.buyprice}
-                        </td>
-                        <td
-                            className="table__cell"
+                        </Cell>
+                        <Cell
                         >
                             {currency.sellprice}
-                        </td>
+                        </Cell>
                     </tr>
 
                 )}
             </tbody>
-        </table>
-    </section>
+        </Container>
+    </StyledTable>
 )
 
 export default Table

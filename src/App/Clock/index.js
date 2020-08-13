@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"
-import "./style.css"
-
+import {StyledClock} from "./styled"
 
 
 const Clock = () => {
@@ -30,11 +29,9 @@ const Clock = () => {
                 second: "numeric"
             });
     return (
-        <section
-            className="clock"
-        >
+        <StyledClock>
             Dzisiaj jest  {dateFormat(date)}
-        </section>
+        </StyledClock>
     )
 }
 

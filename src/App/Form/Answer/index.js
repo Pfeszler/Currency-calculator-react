@@ -1,17 +1,15 @@
 import React from "react"
-import "./style.css"
+import {StyledAnswer} from "./styled"
 
 
 const Answer = ({ answerValue, resultSymbol }) =>
     !!answerValue &&
-    <p
-        className="answer"
-    >
+    <StyledAnswer>
         Na rachunek powiązany z Twoim kontem zostało przelane
          <p>
             {answerValue}&nbsp;{resultSymbol}
         </p>
-    </p>
+    </StyledAnswer>
 
 
 

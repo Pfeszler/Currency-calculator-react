@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Answer from "./Answer"
-import "./style.css"
+import { StyledFieldset, Flexbox, InputList, InputContainer, Discription, StyledInput, Text, Paragraph, Button } from "./styled"
 
 
 const Form = ({ currencies }) => {
@@ -29,30 +29,21 @@ const Form = ({ currencies }) => {
     const onFormSubmit = () =>
         setAnswerValue(calculateResult())
 
-
     return (
         <form
-            className="form"
             onSubmit={(event) => {
                 event.preventDefault();
                 onFormSubmit()
             }
             }
         >
-            <fieldset
-                className="form__fieldset"
-            >
+            <StyledFieldset>
                 <legend
-                    className="form__legend"
                 >
                     Co chcesz zrobić?
                 </legend>
-                <div
-                    className="form__flexbox"
-                >
-                    <ul
-                        className="form__inputList"
-                    >
+                <Flexbox >
+                    <InputList>
                         <li>
                             <label>
                                 <input
@@ -65,11 +56,9 @@ const Form = ({ currencies }) => {
                                         setAnswerValue("");
                                     }}
                                 />
-                                <span
-                                    className="form__discription"
-                                >
+                                <Discription>
                                     Kupuję
-                                </span>
+                                </Discription>
                             </label>
                         </li>
                         <li>
@@ -84,25 +73,19 @@ const Form = ({ currencies }) => {
                                     }}
                                     required
                                 />
-                                <span
-                                    className="form__discription"
-                                >
+                                <Discription>
                                     Sprzedaję
-                                </span>
+                                </Discription>
                             </label>
                         </li>
-                    </ul>
-                    <div
-                        className="form__inputContainer"
-                    >
+                    </InputList>
+                    <InputContainer>
                         <label>
-                            <span
-                                className="form__discription"
-                            >
+                            <Discription>
                                 Wybierz walutę
-                            </span>
-                            <select
-                                className="form__input"
+                            </Discription>
+                            <StyledInput
+                                as="select"
                                 required
                                 name="currency"
                                 value={currencySelected}
@@ -119,23 +102,18 @@ const Form = ({ currencies }) => {
                                         {currency.name}
                                     </option>
                                 )}
-                            </select>
+                            </StyledInput>
                         </label>
-                    </div>
-                    <div
-                        className="form__inputContainer"
-                    >
+                    </InputContainer>
+                    <InputContainer>
                         <label>
-                            <span
-                                className="form__discription"
-                            >
+                            <Discription>
                                 Chcę wymienić
                                 <strong>
                                     ({buy ? "PLN" : currencyToUse.symbol})
                                 </strong>
-                            </span>
-                            <input
-                                className="form__input"
+                            </Discription>
+                            <StyledInput
                                 name="to-exchange"
                                 required
                                 type="number"
@@ -147,26 +125,21 @@ const Form = ({ currencies }) => {
                                 }}
                             />
                         </label>
-                    </div>
-                </div>
-            </fieldset>
-            <div
-                className="form__text"
-            >
+                    </InputContainer>
+                </Flexbox >
+            </StyledFieldset>
+           <Text>
                 <p>
                     Otrzymasz
-                    </p>
-                <p
-                    className="form__paragraph"
-                >
-                    {calculateResult()} ({resultSymbol})
-
                 </p>
-            </div>
-            <button
+                <Paragraph>
+                    {calculateResult()} ({resultSymbol})
+                </Paragraph>
+            </Text>
+            <Button
                 className="form__button"
             >Wymień
-            </button>
+            </Button>
             <Answer
                 answerValue={answerValue}
                 resultSymbol={resultSymbol}

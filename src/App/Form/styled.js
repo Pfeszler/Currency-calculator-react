@@ -1,69 +1,72 @@
-.form__fieldset {
-    padding: 20px;
-    border: 3px solid var(--colorPrime)
-}
+import styled from "styled-components"
 
-.form__flexbox {
+export const StyledFieldset = styled.div`
+    padding: 20px;
+    border: 3px solid var(--colorPrime);
+`
+export const Flexbox = styled.div`
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
+`
 
-.form__inputList {
+export const InputList = styled.ul`
     list-style: none;
     flex-basis: 300px;
-    
-}
+    `
 
-.form__inputContainer {
+export const InputContainer = styled.div`
     flex-basis: 300px;
     margin: 0 auto;
     text-align: center;
-}
+`
 
-.form__discription {
+export const Discription = styled.span`
     display: inline-block;
     margin: 10px 10px;
-}
+`
 
-.form__input {
+export const StyledInput = styled.input`
     display: inline-block;
     padding: 5px;
-    border: 1px solid var(--colorPrime)
-}
+    border: 1px solid var(--colorPrime);
+`
 
-.form__text {
+export const Text = styled.div`
     max-width: 400px;
     padding: 10px;
     border: 3px solid var(--colorPrime);
     margin: 20px auto;
     text-align: center;
-}
+`
 
-.form__paragraph {
+export const Paragraph = styled.p`
     display: block;
     height: 2em;
     font-weight: bold;
-}
+`
 
-.form__button {
+export const Button = styled.button`
     display: block;
     width: 200px;
     padding: 20px;
     border: 3px solid var(--colorPrime);
     background-color: transparent;
     margin: 20px auto;
-    transition: 0.3s
-}
+    transition: 0.3s;
 
-.form__button:hover {
+    &:hover {
     background-color: var(--colorPrime);
-}
+    };
 
-.form__button:focus {
+    &:focus {
     background-color: hsl(135, 67%, 63%);
     outline: none;
-}
+    }
+`
+
+
+
 
