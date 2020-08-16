@@ -140,9 +140,8 @@ const Form = ({ currencies }) => {
                     {calculateResult()} ({resultSymbol})
                 </Paragraph>
             </Text>
-            <Button
-                className="form__button"
-            >Wymień
+            <Button>
+                Wymień
             </Button>
             <Answer
                 answerValue={answerValue}
