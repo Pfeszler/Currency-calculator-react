@@ -2,12 +2,12 @@ import React from "react"
 import {StyledAnswer} from "./styled"
 
 
-const Answer = ({ answerValue, resultSymbol }) =>
+const Answer = ({ answerValue, resultCode }) =>
     !!answerValue &&
     <StyledAnswer>
         Na rachunek powiązany z Twoim kontem zostało przelane
          <p>
-            {answerValue}&nbsp;{resultSymbol}
+            {answerValue}&nbsp;{resultCode}
         </p>
     </StyledAnswer>
 

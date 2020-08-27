@@ -6,15 +6,17 @@ import Clock from "./Clock"
 import Form from "./Form";
 import Table from "./Table";
 import Footer from "./Footer";
-import { currencies } from './currencies.js'
+import {useCurrency} from "./useCurrency"
 
 
 function App() {
 
+  const currencies = useCurrency()
+
   return (
     <Container>
       <Header />
-      <Main>
+      <Main currencies={currencies}>
         <Clock />
         <Form
           currencies={currencies}

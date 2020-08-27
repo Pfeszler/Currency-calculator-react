@@ -1,35 +1,34 @@
 import React, { useState } from "react"
+import { useSelected } from "./useSelected"
 import Answer from "./Answer"
 import { StyledFieldset, Flexbox, InputList, InputContainer, Discription, StyledInput, Text, Paragraph, Button } from "./styled"
+
 
 
 const Form = ({ currencies }) => {
     const [buy, setBuy] = useState(true)
     const [amount, setAmount] = useState("")
-    const [currencySelected, setCurrencySelected] = useState(currencies[0].symbol)
     const [answerValue, setAnswerValue] = useState("")
 
-    const currencyToUse = currencies.find(({ symbol }) => symbol === currencySelected)
+    const [currencyToUse, currencySelected, setCurrencySelected] = useSelected()
 
-    const resultSymbol = buy ? currencyToUse.symbol : "PLN"
-
-    const onBuyChange = () =>
-        setBuy(true);
-
-    const onSellChange = () =>
-        setBuy(false)
+    const resultCode = buy ? currencyToUse.code : "PLN"
 
     const calculateResult = () => {
         if (buy) {
-            return (Number(amount) / currencyToUse.buyprice).toFixed(2)
+            return (Number(amount) / currencyToUse.ask).toFixed(2)
         }
-        return (Number(amount) * currencyToUse.sellprice).toFixed(2)
+        return (Number(amount) * currencyToUse.bid).toFixed(2)
     }
 
+    const onBuyChange = () =>
+        setBuy(true);
+    const onSellChange = () =>
+        setBuy(false)
     const onFormSubmit = () =>
         setAnswerValue(calculateResult())
 
-    return (
+    return currencies.rates.length > 0 && (
         <form
             onSubmit={(event) => {
                 event.preventDefault();
@@ -98,12 +97,12 @@ const Form = ({ currencies }) => {
                                     setAnswerValue("");
                                 }}
                             >
-                                {currencies.map(currency =>
+                                {currencies.rates.map(currency =>
                                     <option
-                                        value={currency.symbol}
-                                        key={currency.symbol}
+                                        value={currency.code}
+                                        key={currency.code}
                                     >
-                                        {currency.name}
+                                        {currency.currency}
                                     </option>
                                 )}
                             </StyledInput>
@@ -114,7 +113,7 @@ const Form = ({ currencies }) => {
                             <Discription>
                                 Chcę wymienić
                                 <strong>
-                                    ({buy ? "PLN" : currencyToUse.symbol})
+                                    ({buy ? "PLN" : currencyToUse.code})
                                 </strong>
                             </Discription>
                             <StyledInput
@@ -137,7 +136,7 @@ const Form = ({ currencies }) => {
                     Otrzymasz
                 </p>
                 <Paragraph>
-                    {calculateResult()} ({resultSymbol})
+                    {calculateResult()} ({resultCode})
                 </Paragraph>
             </Text>
             <Button>
@@ -145,7 +144,7 @@ const Form = ({ currencies }) => {
             </Button>
             <Answer
                 answerValue={answerValue}
-                resultSymbol={resultSymbol}
+                resultCode={resultCode}
             />
         </form>
 

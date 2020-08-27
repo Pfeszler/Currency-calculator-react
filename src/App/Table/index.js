@@ -1,59 +1,61 @@
 import React from "react"
 import { StyledTable, Container, Caption, Cell } from "./styled"
 
-const Table = ({ currencies }) => (
+const Table = ({ currencies }) => {
+    return currencies.rates.length > 0 && (
 
-    <StyledTable>
-        <Container>
-            <Caption>
-                Tabela kursów walut
+        <StyledTable>
+            <Container>
+                <Caption>
+                    Tabela kursów walut aktualna na dzień {currencies.date}
             </Caption>
-            <thead>
-                <tr>
-                    <Cell
-                        as="th"
-                        header
-                    >
-                        Waluta
-                    </Cell>
-                    <Cell
-                        as="th"
-                        header
-                    >
-                        Kupno
-                    </Cell>
-                    <Cell
-                        as="th"
-                        header
-                    >
-                        Sprzedaż
-                    </Cell>
-                </tr>
-            </thead>
-            <tbody>
-                {currencies.map(currency =>
-                    <tr
-                        key={currency.name}
-                    >
+                <thead>
+                    <tr>
                         <Cell
                             as="th"
                             header
                         >
-                            {currency.name}
-                        </Cell>
-                        <Cell>
-                            {currency.buyprice}
-                        </Cell>
+                            Waluta
+                    </Cell>
                         <Cell
+                            as="th"
+                            header
                         >
-                            {currency.sellprice}
-                        </Cell>
+                            Kupno
+                    </Cell>
+                        <Cell
+                            as="th"
+                            header
+                        >
+                            Sprzedaż
+                    </Cell>
                     </tr>
+                </thead>
+                <tbody>
+                    {currencies.rates.map(currency =>
+                        <tr
+                            key={currency.code}
+                        >
+                            <Cell
+                                as="th"
+                                header
+                            >
+                                {currency.currency}
+                            </Cell>
+                            <Cell>
+                                {currency.ask}
+                            </Cell>
+                            <Cell
+                            >
+                                {currency.bid}
+                            </Cell>
+                        </tr>
 
-                )}
-            </tbody>
-        </Container>
-    </StyledTable>
-)
+                    )}
+                </tbody>
+            </Container>
+        </StyledTable>
+    )
+}
 
 export default Table

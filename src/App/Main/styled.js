@@ -5,4 +5,5 @@ export const StyledMain = styled.main`
     margin: 0 auto;
     background: white;
     padding: 30px;
+    min-height: 80vh;
 `
