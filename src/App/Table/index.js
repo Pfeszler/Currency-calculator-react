@@ -1,5 +1,10 @@
 import React from "react"
-import { StyledTable, Container, Caption, Cell } from "./styled"
+import {
+    StyledTable,
+    Container,
+    Caption,
+    Cell
+} from "./styled"
 
 const Table = ({ currencies }) => {
     return currencies.rates.length > 0 && (
@@ -8,7 +13,7 @@ const Table = ({ currencies }) => {
             <Container>
                 <Caption>
                     Tabela kursów walut aktualna na dzień {currencies.date}
-            </Caption>
+                </Caption>
                 <thead>
                     <tr>
                         <Cell

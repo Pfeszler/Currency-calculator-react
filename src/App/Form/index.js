@@ -1,7 +1,17 @@
 import React, { useState } from "react"
 import { useSelected } from "./useSelected"
 import Answer from "./Answer"
-import { StyledFieldset, Flexbox, InputList, InputContainer, Discription, StyledInput, Text, Paragraph, Button } from "./styled"
+import {
+    StyledFieldset,
+    Flexbox,
+    InputList,
+    InputContainer,
+    Discription,
+    StyledInput,
+    Text,
+    Paragraph,
+    Button
+} from "./styled"
 
 
 
@@ -10,7 +20,10 @@ const Form = ({ currencies }) => {
     const [amount, setAmount] = useState("")
     const [answerValue, setAnswerValue] = useState("")
 
-    const [currencyToUse, currencySelected, setCurrencySelected] = useSelected()
+    const [
+        currencyToUse,
+        currencySelected,
+        setCurrencySelected] = useSelected()
 
     const resultCode = buy ? currencyToUse.code : "PLN"
 

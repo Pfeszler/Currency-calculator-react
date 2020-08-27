@@ -19,7 +19,7 @@ export const useCurrency = () => {
             setRatesData({
                 ...ratesData,
                 loading: false,
-                date: data[0].tradingDate,
+                date: data[0].effectiveDate,
                 rates: data[0].rates
             });
         }

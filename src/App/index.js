@@ -6,7 +6,7 @@ import Clock from "./Clock"
 import Form from "./Form";
 import Table from "./Table";
 import Footer from "./Footer";
-import {useCurrency} from "./useCurrency"
+import { useCurrency } from "./useCurrency"
 
 
 function App() {

@@ -1,12 +1,14 @@
 import React from "react"
-import { StyledFooter, Text } from "./styled"
+import {
+  StyledFooter,
+  Text
+} from "./styled"
 
 
 const Footer = () => (
   <StyledFooter >
     <Text>
-      Nie jesteśmy prawdziwym kantorem. ale i tak możesz przesłać nam pieniądze. Gwarantujemy. że ich nie
-      odzyskasz!
+      Nie jesteśmy prawdziwym kantorem, ale kursy są prawdziwe i pobrane z NBP API
     </Text>
   </StyledFooter>
 )
