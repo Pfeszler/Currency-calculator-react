@@ -11,7 +11,7 @@ export const useCurrency = () => {
 
     const downloadRates = async (ratesData, setRatesData) => {
         try {
-            const response = await fetch("http://api.nbp.pl/api/exchangerates/tables/c/");
+            const response = await fetch("https://api.nbp.pl/api/exchangerates/tables/c/");
             if (!response.ok) {
                 throw new Error();
             }
