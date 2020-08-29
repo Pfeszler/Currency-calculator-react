@@ -24,7 +24,7 @@ export const Cell = styled.td`
     border: 3px solid #333;
     text-align: center;
     ${({ header }) => header && css`
-        background: var(--colorPrime);
+        background: ${({ theme }) => theme.color.mint};
         text-transform: uppercase;
         font-weight: 400;
     `}

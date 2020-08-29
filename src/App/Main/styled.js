@@ -6,4 +6,5 @@ export const StyledMain = styled.main`
     background: white;
     padding: 30px;
     min-height: 80vh;
+    background-color: ${({ theme }) => theme.color.white}
 `

@@ -13,7 +13,7 @@ export const Text = styled.p`
     font-size: 25px;
     width: 75%;
     text-align: center;
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         width: 90%;
         font-size: 20px;
     }

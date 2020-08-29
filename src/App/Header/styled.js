@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    background-color: var(--colorPrime);
+    background-color: ${({ theme }) => theme.color.mint} ;
 `
 
 export const Text = styled.h1` 

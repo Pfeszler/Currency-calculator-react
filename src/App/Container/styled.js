@@ -14,7 +14,7 @@ export const StyledContainer = styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(240, 255, 255, 0.548);
+    background-color: ${({ theme }) => theme.color.blackTransparent};
     z-index: -1;
 }
 `

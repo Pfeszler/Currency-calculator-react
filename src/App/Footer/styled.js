@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
-    background-color: var(--colorPrime);
+    background-color: ${({ theme }) => theme.color.mint};
     width: 100%;
     margin-top: 0;
     padding: 20px;
