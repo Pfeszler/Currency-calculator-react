@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/Currency-calculator-react/static/css/main.6f614130.chunk.css",
-    "main.js": "/Currency-calculator-react/static/js/main.1fc130c1.chunk.js",
-    "main.js.map": "/Currency-calculator-react/static/js/main.1fc130c1.chunk.js.map",
+    "main.js": "/Currency-calculator-react/static/js/main.ba596e35.chunk.js",
+    "main.js.map": "/Currency-calculator-react/static/js/main.ba596e35.chunk.js.map",
     "runtime-main.js": "/Currency-calculator-react/static/js/runtime-main.4515b25a.js",
     "runtime-main.js.map": "/Currency-calculator-react/static/js/runtime-main.4515b25a.js.map",
-    "static/js/2.5bcc6ad0.chunk.js": "/Currency-calculator-react/static/js/2.5bcc6ad0.chunk.js",
-    "static/js/2.5bcc6ad0.chunk.js.map": "/Currency-calculator-react/static/js/2.5bcc6ad0.chunk.js.map",
+    "static/js/2.d702985f.chunk.js": "/Currency-calculator-react/static/js/2.d702985f.chunk.js",
+    "static/js/2.d702985f.chunk.js.map": "/Currency-calculator-react/static/js/2.d702985f.chunk.js.map",
     "index.html": "/Currency-calculator-react/index.html",
-    "precache-manifest.013368cb48bc2ef54ffc61c06cf68056.js": "/Currency-calculator-react/precache-manifest.013368cb48bc2ef54ffc61c06cf68056.js",
+    "precache-manifest.95c01830d66580227b38151c84fa3c1e.js": "/Currency-calculator-react/precache-manifest.95c01830d66580227b38151c84fa3c1e.js",
     "service-worker.js": "/Currency-calculator-react/service-worker.js",
-    "static/css/main.6f614130.chunk.css.map": "/Currency-calculator-react/static/css/main.6f614130.chunk.css.map",
-    "static/js/2.5bcc6ad0.chunk.js.LICENSE.txt": "/Currency-calculator-react/static/js/2.5bcc6ad0.chunk.js.LICENSE.txt",
+    "static/js/2.d702985f.chunk.js.LICENSE.txt": "/Currency-calculator-react/static/js/2.d702985f.chunk.js.LICENSE.txt",
     "static/media/money_banknotes_currency_forex_us_dollars_euro_baht_peso-551241.jpg": "/Currency-calculator-react/static/media/money_banknotes_currency_forex_us_dollars_euro_baht_peso-551241.dcdf8117.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4515b25a.js",
-    "static/js/2.5bcc6ad0.chunk.js",
-    "static/css/main.6f614130.chunk.css",
-    "static/js/main.1fc130c1.chunk.js"
+    "static/js/2.d702985f.chunk.js",
+    "static/js/main.ba596e35.chunk.js"
   ]
 }
